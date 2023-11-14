@@ -112,13 +112,6 @@ function Searchbar({
           aria-controls="search-suggestion"
           autocomplete="off"
         />
-        <Button
-          type="button"
-          class="join-item btn-ghost btn-square hidden sm:inline-flex"
-          onClick={() => displaySearchPopup.value = false}
-        >
-          <Icon id="XMark" size={24} strokeWidth={2} />
-        </Button>
       </form>
 
       <div

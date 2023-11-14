@@ -60,30 +60,21 @@ function Navbar({ items, searchbar, logo }: {
             </a>
           )}
         </div>
-        <div class="flex-auto flex justify-center">
-          {items.map((item) => <NavItem item={item} />)}
-        </div>
-        <div class="flex-none w-44 flex items-center justify-end gap-2">
-          <SearchButton />
+        <div class="flex gap-2">
           <Searchbar searchbar={searchbar} />
+          <a href="/venda-lojista">
+            Venda para lojista
+          </a>
+        </div>
+        
+        <div class="flex-none w-44 flex items-center justify-end gap-2">
+          
           <a
             class="btn btn-circle btn-sm btn-ghost"
             href="/login"
             aria-label="Log in"
           >
             <Icon id="User" size={24} strokeWidth={0.4} />
-          </a>
-          <a
-            class="btn btn-circle btn-sm btn-ghost"
-            href="/wishlist"
-            aria-label="Wishlist"
-          >
-            <Icon
-              id="Heart"
-              size={24}
-              strokeWidth={2}
-              fill="none"
-            />
           </a>
           {platform === "vtex" && <CartButtonVTEX />}
           {platform === "vnda" && <CartButtonVDNA />}
@@ -92,6 +83,9 @@ function Navbar({ items, searchbar, logo }: {
           {platform === "shopify" && <CartButtonShopify />}
         </div>
       </div>
+      <div class="hidden flex-auto md:flex justify-center">
+          {items.map((item) => <NavItem item={item} />)}
+        </div>
     </>
   );
 }

@@ -69,8 +69,7 @@ const manifest = {
     "deco-sites/nautika/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$25,
     "deco-sites/nautika/sections/Miscellaneous/CookieConsent.tsx": $$$$$$26,
     "deco-sites/nautika/sections/Newsletter/Newsletter.tsx": $$$$$$32,
-    "deco-sites/nautika/sections/Product/ImageGalleryFrontBack.tsx":
-      $$$$$$22,
+    "deco-sites/nautika/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$22,
     "deco-sites/nautika/sections/Product/ImageGallerySlider.tsx": $$$$$$21,
     "deco-sites/nautika/sections/Product/NotFound.tsx": $$$$$$24,
     "deco-sites/nautika/sections/Product/NotFoundChallenge.tsx": $$$$$$17,
